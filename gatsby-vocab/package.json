@@ -1,0 +1,35 @@
+{
+  "name": "gatsby-vocab-site",
+  "private": true,
+  "description": "Convo Vocab - All the expressions, idioms, and slang you need to know to understand native English speakers and speak fluent English yourself.",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.26.1",
+    "gatsby-image": "^2.6.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-tagmanager": "^2.7.0",
+    "gatsby-plugin-react-helmet": "^3.6.0",
+    "gatsby-source-sanity": "^6.0.4",
+    "normalize.css": "^8.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "react-html-parser": "^2.0.2",
+    "react-icons": "^4.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
+  }
+}

@@ -1,0 +1,40 @@
+.footer {
+  height: 9rem;
+  width: 100%;
+  background: #222;
+  color: var(--off-white);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.mainText {
+  margin: .5rem 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.footer a {
+  color: var(--base-color);
+}
+
+.footer a:hover {
+  color: var(--off-white);
+}
+
+
+
+@media (max-width: 500px) {
+  .footer {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    justify-content: center;
+    height: 12rem;
+  }
+
+  .contact {
+    margin-bottom: .5rem;
+  }
+}

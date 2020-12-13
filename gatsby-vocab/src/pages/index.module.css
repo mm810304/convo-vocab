@@ -1,0 +1,54 @@
+.headerContainer {
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.title {
+  text-align: center;
+  font-size: var(--title-xl);
+  color: var(--base-color);
+  margin: 1rem 0;
+}
+
+.description {
+  text-align: center;
+  font-size: var(--subtitle-large);
+  color: var(--gray);
+  margin-bottom: 1rem;
+  line-height: var(--line-height-medium);
+}
+
+.otherLessons {
+  text-align: center;
+  font-size: var(--subtitle-large);
+  color: var(--gray);
+  margin-bottom: 1rem;
+  line-height: var(--line-height-medium);
+}
+
+.colorIt {
+  color: var(--base-color);
+}
+
+.colorIt:hover {
+  color: var(--base-color-dark-faded);
+}
+
+@media (max-width: 500px) {
+  .headerContainer {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: var(--title-large);
+  }
+
+  .description {
+    font-size: var(--subtitle-medium);
+  }
+
+  .otherLessons {
+    font-size: var(--subtitle-medium);
+  }
+}
