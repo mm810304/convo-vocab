@@ -110,3 +110,37 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--off-white);
 }
 
+.tablestyle2 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tablestyle2 thead {
+  background: var(--base-color);
+  color: var(--off-white);
+  font-weight: 700;
+}
+
+.tablestyle2 td {
+  border: 2px solid var(--black);
+  padding: 1rem;
+}
+
+@media (max-width: 650px) {
+  .tablestyle2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .tablestyle2 {
+    font-size: var(--subtitle-xxs);
+  }
+  .tablestyle2 td {
+    padding: 1rem .5rem;
+  } 
+}
+

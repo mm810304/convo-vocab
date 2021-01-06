@@ -18,8 +18,7 @@ const HomePage = ({ data: { lessons }}) => {
   const [categories, setCategories] = useState(allCategories);
   const [visibleLessons, setVisibileLessons] = useState(shuffledLessons);
   const [isSelectedCategory, setIsSelectedCategory] = useState('all');
-
-  
+ 
   const filterLessons = (category) => {
     if (category === 'all') {
       setVisibileLessons(vocabLessons);
@@ -36,10 +35,14 @@ const HomePage = ({ data: { lessons }}) => {
 
     return (
     <React.Fragment>
-      <SEO title="English Expressions, Idioms, and Slang" description="Learn English expressions, idioms, and slang to speak English fluently and naturally and to understand native English speakers easily!" />
+      <SEO 
+        title="English Expressions, Idioms, and Slang" 
+        description="Learn English expressions, idioms, and slang to speak English fluently  and understand native English speakers easily!" 
+        location="https://www.convovocab.com"
+      />
       <div className={styles.headerContainer}>
         <h1 className={styles.title}>Convo Vocab</h1>
-        <p className={styles.description}>Learn key English expressions, idioms, and slang to speak English fluently and understand native English speakers perfectly.</p>
+        <p className={styles.description}>Learn English expressions, idioms, and slang to speak fluently and listen easily!</p>
         <p className={styles.otherLessons}>Looking for a different type of free English lesson?  <Link to="/convo"><span className={styles.colorIt}>Check out our other <strong>amazing free English content</strong> here.</span></Link></p>
       </div>
       <Categories categories={categories} filterLessons={filterLessons} selectedCategory={isSelectedCategory} />

@@ -21,11 +21,9 @@ const Categories = ({ categories, filterLessons, selectedCategory }) => {
         })}
       </div>
       <div className={styles.explainerContainer}>
-        <p className={styles.explainer}>All these expressions, idioms, and slang are used a lot by native English speakers, but the ones covered in <span className={styles.emphasize}>'Most Important 1'</span> are the most common and important to know!</p>
+        <p className={styles.explainer}>All these expressions, idioms, and slang are used a lot by native English speakers, but the lessons covered in <span className={styles.emphasize}>'Most Important 1'</span> are the most common and important to know!</p>
       </div>
-      
     </React.Fragment>
-    
   )
 };
 
